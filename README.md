@@ -9,7 +9,7 @@ Product Master table update
 2.	**Configure Settings**:  
     a.	Install MySql Server: https://dev.mysql.com/downloads/mysql/    
     b.  Install Mysql Workbench: https://dev.mysql.com/downloads/workbench/   
-    c.  Create Schema in MySql workbench with name: 'ruby_assignment'
+    c.  Create Schema in MySql workbench with name: 'ruby_assignment'   
     d.  Import sql dump file (`dump.sql`) present in root directory to create table structure as required
           
 3.	**Database update Application**:  
