@@ -15,9 +15,9 @@ Product Master table application
     a.	Run driver.py   
     b.  Run Postman to invoke the application at the endpoint: `localhost:5000/invoke_master`    
     c.  Requests:       
-        1. Create Master Table:  POST request with sample json: `test/test_req_create.json` 
-        2. Insert Row in Master Table: POST request with sample json: `test/test_req_insert.json`   
-        3. Append/ Make changes to existing row:      
-            a. GET Request: Product Sku id and Master Table name to be passed in query params. e.g. `127.0.0.1:8080/invoke_master?sku_id=RI-12&master_table_name=master_group`   
-            b. POST Request: Sample JSON: `test/test_req_append.json`     
+            1. Create Master Table:  POST request with sample json: `test/test_req_create.json`     
+            2. Insert Row in Master Table: POST request with sample json: `test/test_req_insert.json`      
+            3. Append/ Make changes to existing row:         
+                a. GET Request: Product Sku id and Master Table name to be passed in query params. e.g. `127.0.0.1:8080/invoke_master?sku_id=RI-12&master_table_name=master_group`   
+                b. POST Request: Sample JSON: `test/test_req_append.json`        
     d. POSTMAN collection with sample requests are in `internship.postman_collection.json`
