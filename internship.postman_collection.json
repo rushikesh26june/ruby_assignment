@@ -1,0 +1,120 @@
+{
+	"variables": [],
+	"info": {
+		"name": "internship",
+		"_postman_id": "68d34d38-1784-e5dc-d983-ebcf17ad06b9",
+		"description": "Ruby Capital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8080/health_status",
+			"request": {
+				"url": "127.0.0.1:8080/health_status",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Checking Health Status of Application (If the server is up and running or not)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/invoke_master?id=RI-12&master_table_name=master_group",
+			"request": {
+				"url": {
+					"raw": "127.0.0.1:8080/invoke_master?sku_id=RI-12&master_table_name=master_group",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"invoke_master"
+					],
+					"query": [
+						{
+							"key": "sku_id",
+							"value": "RI-12",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "master_table_name",
+							"value": "master_group",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get Request to fetch the row from master table"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/invoke_master",
+			"request": {
+				"url": "127.0.0.1:8080/invoke_master",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query_type\":\"Create\",\n    \"payload\": {\n        \"master_table_name\": \"trial_master\",\n        \"sub_group_name\": \"\",\n        \"quantity\": \"\",\n        \"sell_uom\": \"\",\n        \"sell_uom_type\": \"\",\n        \"avg_weight_per_uom\": 0,\n        \"packaging_cost\": 0,\n        \"loading_percent\": 0\n    }\n}"
+				},
+				"description": "POST Request for Creating new Master Table"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/invoke_master",
+			"request": {
+				"url": "127.0.0.1:8080/invoke_master",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query_type\":\"Append\",\n    \"payload\": {\n\t    \"master_table_name\": \"master_group\",\n\t    \"sku_id\": \"RI-12\",\n\t    \"sku_name\": \"Orange\",\n\t    \"sell_uom\": \"0\",\n\t    \"sell_uom_type\": \"kg\",\n\t    \"avg_weight_per_uom\": 500,\n\t    \"packaging_cost\": 0,\n\t    \"loading_percent\": 0\n    }\n}"
+				},
+				"description": "POST Request for making changes to the any row already in table"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/invoke_master",
+			"request": {
+				"url": "127.0.0.1:8080/invoke_master",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query_type\":\"Insert\",\n    \"payload\": {\n        \"master_table_name\": \"trial_master\",\n        \"sub_group_name\": \"Orange-Nagpur\",\n        \"quantity\": \"500 gm\",\n        \"sell_uom\": \"kg\",\n        \"sell_uom_type\": \"Loose\",\n        \"avg_weight_per_uom\": 1,\n        \"packaging_cost\": 0,\n        \"loading_percent\": 40\n    }\n}"
+				},
+				"description": "POST request for inserting row in master table"
+			},
+			"response": []
+		}
+	]
+}

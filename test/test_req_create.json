@@ -1,0 +1,13 @@
+{
+    "query_type":"Create",
+    "payload": {
+        "master_table_name": "trial_master",
+        "sub_group_name": "",
+        "quantity": "",
+        "sell_uom": "",
+        "sell_uom_type": "",
+        "avg_weight_per_uom": 0,
+        "packaging_cost": 0,
+        "loading_percent": 0
+    }
+}

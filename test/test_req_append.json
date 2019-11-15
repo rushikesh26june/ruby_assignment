@@ -1,0 +1,13 @@
+{
+    "query_type":"Append",
+    "payload": {
+	    "master_table_name": "master_group",
+	    "sku_id": "RI-12",
+	    "sku_name": "Orange",
+	    "sell_uom": "0",
+	    "sell_uom_type": "kg",
+	    "avg_weight_per_uom": 500,
+	    "packaging_cost": 0,
+	    "loading_percent": 0
+    }
+}

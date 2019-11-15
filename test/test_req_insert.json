@@ -1,0 +1,13 @@
+{
+    "query_type":"Insert",
+    "payload": {
+        "master_table_name": "master_group",
+        "sub_group_name": "Apple-Fuji",
+        "quantity": "500 gm",
+        "sell_uom": "kg",
+        "sell_uom_type": "Loose",
+        "avg_weight_per_uom": 1,
+        "packaging_cost": 0,
+        "loading_percent": 40
+    }
+}
